@@ -27,11 +27,12 @@ const Header = ({ session, entreprise }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="./" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-red-600 rounded-lg flex items-center justify-center shadow-lg">
-              <svg viewBox="0 0 24 24" className="w-7 h-7 text-white" fill="currentColor">
+            <div className="w-12 h-12 bg-gradient-transparent rounded-lg flex items-center justify-center shadow-lg">
+              {/* <svg viewBox="0 0 24 24" className="w-7 h-7 text-white" fill="currentColor">
                 <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18.5c-3.86-.96-6.5-4.55-6.5-8.5V8.3l6.5-3.25 6.5 3.25V12c0 3.95-2.64 7.54-6.5 8.5z" />
                 <circle cx="12" cy="12" r="3" />
-              </svg>
+              </svg> */}
+              <img src="/logo.png" className="w-full h-full" />
             </div>
             <div className="flex flex-col">
               <span className={`text-2xl font-bold tracking-tight ${scrolled || NO_BANNER_ROUTES.includes(router.pathname) ? 'text-gray-900' : 'text-white'}`}>
