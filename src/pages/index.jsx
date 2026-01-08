@@ -20,7 +20,7 @@ const index = ({ session, entreprise }) => {
       <Destinations entreprise={entreprise} />
       <Styles entreprise={entreprise} />
       <Getinspired entreprise={entreprise} />
-      <Team entreprise={entreprise} />
+      {/* <Team entreprise={entreprise} /> */}
       <Reviews entreprise={entreprise} />
       <ChatAI isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>

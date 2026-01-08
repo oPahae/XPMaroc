@@ -32,7 +32,10 @@ export default async function handler(req, res) {
       [
         title,
         description,
-        `TOUR${parseInt(Math.random(0,1)*100)}-${new Date(Date.now()).toLocaleDateString('FR-fr').replaceAll("/", "")}-${places[0].toUpperCase().slice(0, 3)}-${places[1].toUpperCase().slice(0, 3)}-${places[places.length-1].toUpperCase().slice(0, 3)}`,
+        places.length > 1 ?
+          `TOUR${parseInt(Math.random(0,1)*100)}-${new Date(Date.now()).toLocaleDateString('FR-fr').replaceAll("/", "")}-${places[0].toUpperCase().slice(0, 3)}-${places[1].toUpperCase().slice(0, 3)}-${places[places.length-1].toUpperCase().slice(0, 3)}`
+          :
+          `TOUR${parseInt(Math.random(0,1)*100)}-${new Date(Date.now()).toLocaleDateString('FR-fr').replaceAll("/", "")}-${places[0].toUpperCase().slice(0, 3).slice(0, 3)}`,
         days,
         mainImage ? Buffer.from(mainImage, 'base64') : null,
         places.join(','),
