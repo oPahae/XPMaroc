@@ -12,8 +12,8 @@ export default function Landing({ session, entreprise }) {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source
-          src="https://cdn.prod.website-files.com/64fba653be6287d23f6f6bf1/65702c2fce85b20bd6797d0b_montage of different cities of morocco experience morocco-transcode.webm"
-          type="video/webm"
+          src="/bg.mp4"
+          type="video/mp4"
         />
       </video>
 

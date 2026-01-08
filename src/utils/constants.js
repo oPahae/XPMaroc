@@ -194,10 +194,11 @@ export const socialLinks = [
 ];
 
 export const footerInfos = {
-    entreprise: "XPMaroc",
+    entreprise: "Imperial Trail Tours",
     tel: "+2120000000",
     email: "contact.xpmaroc@gmail.com",
     location: "Casablanca, Maroc",
+    domaine: "https://www.imperialtrailtours.com"
 }
 
 export const destination = {
