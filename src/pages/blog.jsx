@@ -103,8 +103,6 @@ export default function BlogPage() {
           </div>
         </div>
 
-<blockquote>ccc</blockquote>
-
         {/* Blog Content */}
         <article className="prose lg:prose-xl max-w-none mb-12">
           {/* Render HTML content safely */}
